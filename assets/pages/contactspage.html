@@ -4,11 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title>Contacts</title>
+        <title>Ace Website - Contacts</title>
         <link rel="stylesheet" type="text/css" href="/assets/pages/css/contactspage.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Prosto+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="/assets/img/icon.png" rel="icon">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     </head>
     <body>
         <section class="hero">
@@ -32,52 +33,73 @@
                         </ul>
                     </nav>
                 </header>
-              <section id="contact" class="contact">
-                <div class="container">
+               <section id="contact" class="contact">
+                  <div class="container" data-aos="fade-up">
 
-                  <div class="section-title">
-                    <h1>CONTACTS</h1>
-                  </div>
-
-                  <div class="row mt-2">
-
-                    <div class="col-md-6 d-flex align-items-stretch">
-                      <div class="info-box">
-                        <h3>My Address</h3>
-                        <p>Zone 2, Gango, Libona, Bukidnon</p>
-                      </div>
+                    <div class="section-title">
+                      <h2>CONTACTS</h2>
                     </div>
 
-                    <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-                      <div class="info-box">
-                        <h3>Social Profiles</h3>
-                        <div class="social-links">
-                            <a href="https://www.facebook.com/calvinkenn.acerdanoii.5?mibextid=ZbWKwL"><i class="fa-brands fa-square-facebook"></i></a>
-                            <a href="https://youtube.com/@calvinkennacerdano8470"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://github.com/AcerCalvin"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://discordapp.com/users/735911552313720922."><i class="fa-brands fa-discord"></i></a>
-                            <a href="https://t.me/@AcerCalvin"><i class="fa-brands fa-telegram"></i></a>
-                            <a href="https://twitter.com/KennAcerdano"><i class="fa-brands fa-twitter"></i></a>
+                    <div class="row">
+
+                      <div class="col-lg-5 d-flex align-items-stretch">
+                        <div class="info">
+                          <div class="address">
+                            <i class="ri-map-pin-2-fill"></i>
+                            <h4>LOCATION:</h4>
+                            <p>Zone 2, Gango, Libona, Bukidnon</p>
+                          </div>
+
+                          <div class="email">
+                            <i class="ri-mail-fill"></i>
+                            <h4>EMAIL:</h4>
+                            <p>acerdano.calvinkenn07@gmail.com</p>
+                          </div>
+
+                          <div class="phone">
+                            <i class="ri-phone-fill"></i>
+                            <h4>CALL:</h4>
+                            <p>0991 295 2721</p>
+                          </div>
+
+                          <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1360&amp;height=500&amp;hl=en&amp;q=Gango, Libona, Bukidnon&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.gachacute.com/">Download</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:500px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:500px;}.gmap_iframe {height:500px!important;}</style></div>
                         </div>
+
                       </div>
+
+                      <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                          <div class="row">
+                            <div class="form-group col-md-6">
+                              <label for="name">NAME:</label>
+                              <input type="text" name="name" class="form-control" id="name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="name">EMAIL:</label>
+                              <input type="email" class="form-control" name="email" id="email" required>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="name">SUBJECT:</label>
+                            <input type="text" class="form-control" name="subject" id="subject" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="name">MESSAGE:</label>
+                            <textarea class="form-control" name="message" rows="10" required></textarea>
+                          </div>
+                          <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                          </div>
+                          <div class="text-center"><button type="submit">Send Message</button></div>
+                        </form>
+                      </div>
+
                     </div>
 
-                    <div class="col-md-6 mt-4 d-flex align-items-stretch">
-                      <div class="info-box">
-                        <h3>Email Me</h3>
-                        <p>acerdano.calvinkenn07@gmail.com</p>
-                      </div>
-                    </div>
-                    <div class="col-md-6 mt-4 d-flex align-items-stretch">
-                      <div class="info-box">
-                        <h3>Call Me</h3>
-                        <p>0991 295 2721</p>
-                      </div>
-                    </div>
-                    </div>
-                </div>
-              </section>
-
+                  </div>
+                </section>
             </div>
         </section>
     </body>
